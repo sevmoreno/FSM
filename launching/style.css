@@ -1,0 +1,157 @@
+
+* {
+    margin: 0px;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 2000px;
+    background-color: #080C20
+    
+}
+
+.headerzone {
+
+    display: flex;
+    padding-top: 30px;
+    padding-left: 135px;
+}
+
+.zone1 {
+
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.backleft {
+    display: flex;
+    align-items: left;
+    
+    
+}
+
+.backright {
+    display: flex;
+    align-items: right;
+    
+
+}
+
+.backcenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: url(/launching/assets/Path2.svg);
+    
+
+}
+
+
+.titulo {
+
+    margin-top: 50px;
+    text-align: center;
+    width: 400px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    color: #fff
+    
+}
+
+
+.subtitulo {
+
+    margin-top: 50px;
+    font-size: 15px;
+    color: #777F98;
+    width: 600px;
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+
+}
+
+.zone2 {
+    padding-right: 200px;
+    padding-top: 140px; 
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: space-evenly;
+    /* align-content: center; */
+
+}
+
+.component {
+
+    height: 100px;
+    width: 12%;
+    color: white
+
+}
+
+.subtit {
+    margin-top: 10px;
+}
+
+.subelemento {
+
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.component1 {
+
+    height: 100px;
+    width: 12%;
+    color: white;
+    margin-top: 80px;
+
+}
+
+.component2 {
+
+    height: 100px;
+    width: 12%;
+    color: white
+
+}
+
+.component3 {
+
+    height: 100px;
+    width: 12%;
+    color: white;
+    margin-top: 80px;
+}
+
+
+.pricing {
+
+    width: 100%;
+    color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.subpricing {
+
+    width: 40%;
+    color: white;
+    
+
+    /* display:flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    text-align: center;
+    align-content: center; */
+    
+}
