@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+   
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    background-color: #101824;
+    width: 100%;
+    /* height: 14800px; */
+    /* margin-top: 50px; */
+    padding-top: 50px;
+    /* background-color: #819cee; */
+    justify-content: space-around;
+    height: 1000px;
+
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 400px;
+    background-color: #111111;
+    position: absolute;
+    top: 330px;
+    left: 250px;
+    justify-content: space-around;
+
+
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    background-image: none;
+    /* background-color: #ad7c7c; */
+    /* opacity: 0.4; */
+}
+h1{
+    background-color: #000000;
+    color: #e9e9e9;
+}
+
+p {
+
+    background-color: #000000;
+    color: #e9e9e9;
+
+
+}
+
+
+.dashboardcontenedor {
+
+ background-color: #101824;
+
+}
+
+
+.sidebar {
+    height: 100vh;
+    width: 150px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 30px;
+    font-size: larger;
+
+
+}
+
+.sidebar ul {
+
+    list-style: none;
+    margin-top: 30px;
+    padding: 0 20 px;
+}
+
+.sidebar li {
+
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+
+    color: #494949;
+
+}
+
+.dashboardcontenedor {
+    display: flex;
+
+}
+
+.dashboar1main {
+
+    
+    
+    background-color: #101824;
+ 
+    width: 100vh;
+    height: 100vh;
+    color: #ffffff;
+
+}
+
+button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    counter-reset: pointer;
+    transform: background-color .3s ease;
+
+}
+
+button:hover {
+    color: rgb(24, 24, 24);
+    background-color: #707070;
+}
+
+.reatured {
+
+    display: flex;
+    
+    align-items:center;
+    background-color: rgb(138, 143, 192,0.23);
+    width: 100vw;
+    max-width: 1000px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+.reatured img {
+    border-radius: 20px;
+}
+
+
+.reatured div {
+    /* width: 100%; */
+    padding: 40px;
+    line-height: 2;
+    font-size: 1.1em;
+}
+
+#shows {
+
+    display: flex;
+    margin-top: 20px;
+
+
+}
+
+.show {
+
+    background: rgb(138, 143, 192,0.23);
+    margin-right: 20px;
+    border-radius: 10px;
+
+}
+
+.show img {
+    border-radius: 20px;
+    box-shadow: rgb(0, 0, 0,0.23);
+}

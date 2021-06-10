@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="POD" content="POD">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <title>POD LISTENER</title>
+        
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="derecha">
+                <img src="/Pod/assets/desktop/logo.svg">
+            </div>
+            <div class="izquierda">
+                <img src="/Pod/assets/desktop/image-host.jpg">
+            </div>
+
+            
+
+        </div>
+        
+        <div class="mainBlock">
+
+            <h1> PUBLISH YOUR PODCAST <br> EVERYWERE</h1>
+            
+
+            <p>Upload your audio to Pod with a single click. We’ll <br> then distribute your podcast to Spotify, Apple 
+                <br> Podcasts, Google Podcasts, Pocket Casts and more!</p>
+
+                <div class="input">
+                    <div id="input-field">
+                      <!-- <input type="email" placeholder="Email address" id="input-email"> -->
+                      <button onclick="autho()">Request access</button>
+                    </div>
+                    <p id="error-message">Oops! Please check your email</p>
+                </div>
+
+
+            <div class="images">
+                <img src="./assets/desktop/spotify.svg" alt="Spotify">
+                <img src="./assets/desktop/apple-podcast.svg" alt="Apple Podcast">
+                <img src="./assets/desktop/google-podcasts.svg" alt="Google Podcast">
+                <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts">
+              </div>
+            
+
+
+
+                
+        </div>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDB7XBKuBPxgIseKbGNJuXwnfS8V1hliek",
+    authDomain: "pod-site-efa2e.firebaseapp.com",
+    projectId: "pod-site-efa2e",
+    storageBucket: "pod-site-efa2e.appspot.com",
+    messagingSenderId: "984096250551",
+    appId: "1:984096250551:web:3ba0dc2c44fa6f4f6e8b32",
+    measurementId: "G-CT65SQHZ6Z"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  function autho() {
+
+    var provider = new firebase.auth.GoogleAuthProvider();
+    firebase.auth().signInWithPopup(provider).then(function (result) {
+
+        var token = result.credential.accessToken;
+        var user = result.user;
+        window.loaction.href = '/dashboard.html';
+
+    });
+
+
+
+  }
+</script>
+    </body>
+</html>
